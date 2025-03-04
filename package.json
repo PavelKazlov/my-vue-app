@@ -1,0 +1,26 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^8.17.14",
+    "@types/three": "^0.173.0",
+    "lodash.throttle": "^4.1.1",
+    "solid-js": "^1.9.4",
+    "solid-three": "^0.2.0",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "@types/lodash.throttle": "^4.1.9",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}
