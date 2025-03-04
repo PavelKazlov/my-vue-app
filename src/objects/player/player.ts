@@ -1,6 +1,3 @@
-
-
-
 import { FrontSide, Group, Mesh, MeshBasicMaterial, PlaneGeometry, TextureLoader, } from "three"
 import { createArrowHelper } from "../../arrow"
 import { keyboardControl } from "../../keyboard.control"
