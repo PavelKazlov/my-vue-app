@@ -1,7 +1,8 @@
 import { onCleanup, onMount } from "solid-js";
 import { Scene, PerspectiveCamera, WebGLRenderer, Color } from "three";
-import { player } from "../../objects/player/player";
-import { anotherPlayer } from "../../objects/cube/cube";
+// import { player } from "../../objects/player/player";
+// import { anotherPlayer } from "../../objects/cube/cube";
+import { player2 } from "../../objects/player/player2";
 
 const CubeAnimation = () => {
   let mountRef: HTMLDivElement | undefined;
@@ -16,16 +17,14 @@ const CubeAnimation = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.appendChild(renderer.domElement);
 
-       scene.add(player.group, 
-      // anotherPlayer.mesh
+       scene.add(player2.group, 
     );
 
     camera.position.z = 5;
 
     const animate = () => {
       requestAnimationFrame(animate);
-      player.render()
-      anotherPlayer.render()
+      player2.render()
       renderer.render(scene, camera);
     };
 
